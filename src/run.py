@@ -14,19 +14,19 @@ class TwoSum:
             # https://www.techiedelight.com/loop-through-list-with-index-python/
             # for methods of class, self. is needed?
             # loop over indexing?
-            if abs(self.num[index]-self.target) in self.num:
-                # print(self.num[index])
-                print(f' [{index}, {self.num.index(abs(self.num[index]-self.target))}]')
-                # the print line is not beautiful
-                # also uses logger instead of prints
+            if (self.target-self.num[index]) in self.num:
+                logger.info(f' [{index}, {self.num.index(abs(self.num[index]-self.target))}]')
                 break
-            # else:
-            #     logger.info(f'not founded!')
-            # else is not completed
+            else:
+                logger.info(f'not founded!')
+                break
 
 if __name__ == '__main__':
     tmp = TwoSum(num = [2,3,4,5], target = 6)
     tmp.twosum()
-    # there is a bug, try target 1 :D
+    logger.info(f'Done!')
 
-# what other oprions?
+# what other options?
+# the code is not as beautiful as I like to be
+# not neat very much, where i used indexing
+# and where i used long lines
