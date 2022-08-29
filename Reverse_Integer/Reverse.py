@@ -11,19 +11,30 @@ Input: x = -123
 Output: -321
 """
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 class Reverse:
 
-    def __int__(self, number): #self
-        self.number=number
-    def reverse(self): #to reverse the given number
-        for i in range(0,32): #loop over the             
+    def __int__(self, number):  # self
+        self.number = number
+
+    def reverse(self, retrun=list):  # to reverse the given number
+        n = 0
+        list = []
+        for i in range(0, 10):
+            if self.number < 10 ** i:
+                n = i
+                break
+        for i in range(1, n):
+            list[0] = self.number % 10
+            list[i] = (self.number % (10 ** (i + 1)) - self.number % (10 ** i)) / (10 ** i)
+
+        retrun[list]
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    num = int(input())
+    ls = Reverse(num)
+    print(ls.revers())
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
