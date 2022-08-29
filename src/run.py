@@ -1,5 +1,6 @@
-#Third Version SNI(just because we are both SN =))))))))))))))))
-#from loguru import logger#// I Do not know what this is? I will look
+#Third Version by SNI(just because we are both SN =))))))))))))))))
+#SNI Thanks for the code I think you did it all, I will change few things
+#from loguru import logger#// SNI: I Do not know what this is? And looked it up seems like i need to install a package for it well I wont!
 
 
 class TwoSum: # SNI how about merging these?
@@ -9,7 +10,7 @@ class TwoSum: # SNI how about merging these?
 
     # def __call__():
 
-    def twosum(self):  # bayad baghei self haram beidm?SNI vagheyat nemidunam =)))))))
+    def twosum(self):  # bayad baghei self haram beidm?SNI vagheyat fek konam faghat self o bas bedi=)))))))
         for index, value in enumerate(self.num):# SNI this was nice I did not know about enumerate
         # for i in range(len(self.num)):  # other methods for this like enumerate
             # https://www.techiedelight.com/loop-through-list-with-index-python/ //SNI WELL THANK YOU SO MUCH
