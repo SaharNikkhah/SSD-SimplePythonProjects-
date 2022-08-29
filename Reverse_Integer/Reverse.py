@@ -19,28 +19,32 @@ class Reverse:
 
     def reverse(self):  # to reverse the given number
         n = 0
-        list = []
-        for i in range(0, 10):
-            if self.number < (10 ** i):
-                n = i
-                break
+       #I am stupid!!
 
-        list.append(self.number % 10)
-        for i in range(1, n):
+       #for i in range(0, 10):
+        #    if self.number < (10 ** i):
+         #       n = i
+          #      break
 
-            list.append((self.number % (10 ** (i + 1)) - self.number % (10 ** i)) / (10 ** i))
-        reversed=0
-        for i, value in enumerate(list):#thanks to you :D
-            reversed+=10**i*list[n-i-1]
-        return reversed
+        #list.append(self.number % 10)
+        #for i in range(1, n):
+
+         #   list.append((self.number % (10 ** (i + 1)) - self.number % (10 ** i)) / (10 ** i))
+        #reversed=0
+        #for i, value in enumerate(list):#thanks to you :D
+         #   reversed+=10**i*list[n-i-1]
+        #This is a smarter way!
+        List1 = list(str(self.number))
+
+        print("".join(List1[::-1]))
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     num = int(input())
     ls = Reverse(num)
-    list= int(ls.reverse())
-    print (list)
+    ls.reverse()
+
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
