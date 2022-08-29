@@ -3,7 +3,7 @@
 #from loguru import logger#// SNI: I Do not know what this is? And looked it up seems like i need to install a package for it well I wont!
 
 
-class TwoSum: # SNI how about merging these?
+class TwoSum:
     def __init__(self, num, target):
         self.num = num
         self.target = target
