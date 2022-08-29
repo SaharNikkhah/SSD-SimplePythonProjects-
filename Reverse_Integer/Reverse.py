@@ -30,7 +30,7 @@ class Reverse:
 
             list.append((self.number % (10 ** (i + 1)) - self.number % (10 ** i)) / (10 ** i))
         reversed=0
-        for i, value in enumerate(list):
+        for i, value in enumerate(list):#thanks to you :D
             reversed+=10**i*list[n-i-1]
         return reversed
 
