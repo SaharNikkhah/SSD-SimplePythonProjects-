@@ -21,6 +21,7 @@ def gridChallenge(grid):
         print(grid[i])
     # print(grid)
     ans = 'YES'
+    #loop over grids columns
     for i in range(len(grid)):
         for x in range(len(grid[0])):
             s = ''.join(i[x] for i in grid)
